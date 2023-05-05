@@ -1,0 +1,7 @@
+FROM nginx:latest
+
+RUN apt-get update
+RUN apt-get install vim -y
+
+# docker build -t edsonluiz/nginx-com-vim:latest .
+# docker run rm -it edsonluiz/nginx-com-vim bash

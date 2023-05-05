@@ -1,0 +1,10 @@
+FROM nginx:latest
+
+# diretorio de trabalho dentro do container.
+# cria uma pasta no docker e inicia o container nesta pasta.
+WORKDIR /app
+RUN apt-get update && \
+  apt-get install vim -y
+
+# e possivel copiar um arquivo local para dentro do container.
+COPY html/ usr/share/nginx/html
