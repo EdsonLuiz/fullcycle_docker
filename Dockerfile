@@ -4,4 +4,5 @@ FROM alpine:latest
 # pode ser usado um comando fixo e um variavel com ajuda do ENTRYPOINT
 
 ENTRYPOINT [ "echo", "Hello" ]
-CMD [ "echo", "World" ]
+# CMD entra como parametro do ENTRYPOINT
+CMD ["World" ]
